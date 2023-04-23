@@ -1,92 +1,199 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --body-font: 'Fira Sans Extra Condensed','Dancing Script', sans-serif, cursive;
+  --title-font: 'Fira Sans Extra Condensed', sans-serif;
+
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background: #E4DDDC;
   
-  .footer .links {
-    padding: 0.5rem 1rem 1.5rem;
-    white-space: nowrap;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 1.6;
+/*   max-width: 1024px;
+  min-width: 360px; */
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 60%;
+/*   min-width: 0%; */
+  height: auto;
+  display: inline-block;
+}
+.icon { 
+  max-width: 40%;
+  min-width: 40%;
+  object-fit: contain;
+  height: 20%;
+  width: 20%;
+/*   margin: 0 auto;
+  position: center; */
+  display: center;
+}
+
+.nav__menu {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #1E1D1D;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-sizing: border-box;
+  height: 80px;
+  padding: 20px;
+}
+
+.phone {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.email {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+ul.nav__list li {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  justify-content: center; 
+  text-align: center;
+  display: inline-block;
+}
+
+ul.nav__list li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav__item {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav__item a:hover {
+  border-bottom: 3px solid #9D3D2E;
+}
+
+
+.services-full-list {
+  height: auto; 
+  display: block; 
+  margin: auto;
   }
+
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* .left-section,
+.right-section {
+  flex-basis: 50%;
+} */
+.contact-section{
+  padding: 10px;
+}
+.contact__container{
+  padding: 10px;
+}
+.contact__text{
+  background-color: #9D3D2E;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
   
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+.contact__text:hover{
+  background-color: #495658;
+  transition-duration: 0.7s;
+}
+
+.pictures-section {
+  padding-top: 20px;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
   
-  :root {
-    --header-height: 5rem;
-    --font-medium: 500;
-    --backgroundcolor: #ffffff;
-    --detailscolor: #525652;
-    --textcolor: #000000;
-    --body-font: 'Fira Sans Extra Condensed','Dancing Script', sans-serif, cursive;
-    --h1-font-size: 6rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --medium-font-size: 2rem;
-    --title-font: 'Fira Sans Extra Condensed', sans-serif;
-    --highlightcolor: #525652;
-  }
-  
-  @media screen and (min-width: 768px) {
-    :root {
-      --big-font-size: 3.5rem;
-      --h2-font-size: 2rem;
-      --normal-font-size: 1rem;
-      --small-font-size: 0.875rem;
-    }
-  }
-  
-  
-  html {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-  /*   padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px; */
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  /* title{
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-  } */
-  
-  body {
-    overflow-x: hidden;
-    max-width: 100%;
-    margin: 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    line-height: 1.6;
-  /*   max-width: 1024px;
-    min-width: 360px; */
-  }
-  h1,
-  h2,
-  p {
-    margin: 0;
-  }
-  
-  img {
-    max-width: 60%;
-    height: auto;
-    display: inline-block;
-    position: center;
-  }
-  .icon { 
-    max-width: 40%;
-    object-fit: contain;
-    height: 20%;
-    width: 20%;
-  /*   margin: 0 auto;
-    position: center; */
-    display: center;
-  }
-  
-  
-  
-  .grid-list { 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
+}
+
+.picture-container img {
+  width: calc(25% - 10px);
+  margin-bottom: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.picture-container img:last-child {
+  margin-right: 0;
+}
+
+
+
+footer {
+  display: flex;
+  background-color: #1E1D1D;
+  color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+
+}
+
+.yelp-logo {
+  width: 50px;
+}
+
+.about__social-icon{
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+
+
+.review { 
+  padding: 16px;
+  display: inline-block;
+  border-bottom: 3px solid #9D3D2E;
+}
